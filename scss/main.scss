@@ -1,6 +1,94 @@
 @import "config";
+
 body {
   background-image: url("../images/pattern-background-desktop.svg");
   background-color: $pale-blue;
   background-repeat: no-repeat;
+  font-family: $red-hat-display;
+}
+
+.card {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  min-height: 39.25rem;
+  max-width: 25.4rem;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__hero {
+    background: url("../images/illustration-hero.svg") no-repeat center center /
+      cover;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  background: $very-pale-blue;
+
+  &__title {
+    color: $dark-blue;
+  }
+  &__description {
+    color: $desaturated-blue;
+  }
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__description {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-left: 0.6rem;
+    color: $dark-blue;
+
+    &--lighter {
+      color: $desaturated-blue;
+    }
+  }
+
+  &__link {
+    color: $bright-blue;
+
+    &:hover {
+      color: $desaturated-blue;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 10px;
+  background: $bright-blue;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    background: $dark-blue;
+    transition: background 0.2s ease-in;
+  }
+}
+
+.cancel-button {
+  color: $desaturated-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $dark-blue;
+    transition: color 0.2s ease-in;
+  }
 }

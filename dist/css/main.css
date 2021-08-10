@@ -1,4 +1,76 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+p {
+  font-size: 16px; }
+
 body {
   background-image: url("../images/pattern-background-desktop.svg");
   background-color: #e0e8ff;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif; }
+
+.card {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  min-height: 39.25rem;
+  max-width: 25.4rem;
+  border-radius: 20px;
+  overflow: hidden; }
+  .card__hero {
+    background: url("../images/illustration-hero.svg") no-repeat center center/cover; }
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  background: #f5f7ff; }
+  .card-content__title {
+    color: #1f2f56; }
+  .card-content__description {
+    color: #7280a7; }
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .plan__description {
+    display: flex; }
+  .plan__title {
+    font-size: 16px;
+    margin-left: 0.6rem;
+    color: #1f2f56; }
+    .plan__title--lighter {
+      color: #7280a7; }
+  .plan__link {
+    color: #3829e0; }
+    .plan__link:hover {
+      color: #7280a7; }
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 10px;
+  background: #3829e0;
+  color: #fff;
+  text-decoration: none; }
+  .button:hover {
+    background: #1f2f56;
+    transition: background 0.2s ease-in; }
+
+.cancel-button {
+  color: #7280a7;
+  text-decoration: none; }
+  .cancel-button:hover {
+    color: #1f2f56;
+    transition: color 0.2s ease-in; }
