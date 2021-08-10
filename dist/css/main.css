@@ -74,3 +74,7 @@ body {
   .cancel-button:hover {
     color: #1f2f56;
     transition: color 0.2s ease-in; }
+
+@media (max-width: 600px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg"); } }
