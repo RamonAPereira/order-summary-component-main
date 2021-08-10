@@ -21,3 +21,5 @@ node_modules/
 package-lock.json
 README-template.node_modules
 style-guide.md
+README.md
+README-template.md
